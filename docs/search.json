@@ -6,21 +6,21 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-01-18T16:53:21-08:00"
+      "last_modified": "2022-01-18T17:12:32-08:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-01-18T16:53:21-08:00"
+      "last_modified": "2022-01-18T17:12:33-08:00"
     },
     {
       "path": "index.html",
       "title": "Germán Silva",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          GDS\r\n          \r\n          \r\n          Home\r\n          About\r\n          Blog\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Germán Silva\r\n            \r\n            \r\n              \r\n                \r\n                    \r\n                      \r\n                        LinkedIn\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Twitter\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        GitHub\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Email\r\n                      \r\n                    \r\n                  \r\n                                  \r\n            \r\n          \r\n        \r\n        \r\n        \r\n          \r\n            I am a PhD Student at UC Santa Barbara’s Department of Geography working with Jennifer King, Dar Roberts, and Ian Walker.\r\n            I am currently funded by the NSF Graduate Research Fellowship Progam and UCSB’s Eugene Cota-Robles Fellowship. My research focuses on remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. Particularly I have strong interests in restored and managed wetlands and the ways that our understanding and management of them can be benefited and improved by data and data science.\r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Germán Silva\r\n            \r\n            \r\n              \r\n                \r\n                                    \r\n                    \r\n                      LinkedIn\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Twitter\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                                  \r\n              \r\n            \r\n            \r\n              I am a PhD Student at UC Santa Barbara’s Department of Geography working with Jennifer King, Dar Roberts, and Ian Walker.\r\n              I am currently funded by the NSF Graduate Research Fellowship Progam and UCSB’s Eugene Cota-Robles Fellowship. My research focuses on remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. Particularly I have strong interests in restored and managed wetlands and the ways that our understanding and management of them can be benefited and improved by data and data science.\r\n            \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2022-01-18T17:10:35-08:00"
+      "last_modified": "2022-01-18T17:12:34-08:00"
     }
   ],
   "collections": ["posts/posts.json"]
