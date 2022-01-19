@@ -1,0 +1,18 @@
+---
+title: "Germán Silva"
+site: distill::distill_website
+image: "german.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/in/german-silva"
+  - label: Twitter
+    url: "https://twitter.com/envirogeography"
+  - label: GitHub
+    url: "https://github.com/German-Sil"
+  - label: Email
+    url: "mailto:german.silva@geog.ucsb.edu"
+output:
+  postcards::trestles
+---
+ 
+I am a PhD student in Geography at UC Santa Barbara. My research focuses on remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands, with strong interests in restored and managed lands and the ways that efforts can be improved by data and data science. 
