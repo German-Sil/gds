@@ -1,10 +1,11 @@
 ---
-title: "About this site"
+title: "About Myself"
 description: |
-  Some additional details about the website
+  Additional information about my interests, skills, and education
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 
