@@ -8,4 +8,7 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Interests
+
+Broadly, my research interests are in the realm of coastal wetland remote sensing, biogeochemistry, and other biophysical processes. Particularly, I am interested in how we can use remote sensing in tandem with field-based data to better our understanding and management of wetlands and their various processes.  
 
