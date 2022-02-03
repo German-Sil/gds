@@ -1,6 +1,6 @@
 ---
 title: "Curriculum vitae"
-output: html_document
+description: |
 ---
 
 ```{r setup, include=FALSE}
