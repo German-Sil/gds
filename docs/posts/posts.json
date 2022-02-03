@@ -1,19 +1,19 @@
 [
   {
     "path": "posts/2022-01-18-welcome/",
-    "title": "welcome",
-    "description": "A short description of the post.",
+    "title": "Let's Talk Reproducible Data Sci",
+    "description": "Learn about two tools to help you work with data in a more reproducible way",
     "author": [
       {
-        "name": "Unknown",
+        "name": "Germán Silva",
         "url": {}
       }
     ],
-    "date": "2022-01-18",
+    "date": "2022-02-02",
     "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nIntro\r\nI’m sure that if you are least somewhat familiar with coding then you have had to deal with the issue of having to navigate file paths and working directories. Maybe you have even had to work with someone’s code and had to update broken file paths or reset hard coded working directories? If that sounds like you, you might have thought to yourself, “F**k this! There must be a much easier way to deal with this stuff!”\r\nWell there is no need to swear anymore as there totally is a much easier way to do this and in a way that will be reproducible for others to do! Let me introduce you to two little things that will perhaps make your life much easier: the {here} package and Rprojects.\r\nSo what are {here} and Rprojects?\r\nSimply put they are a way to work within self-contained folders with relative file paths.\r\nYou see a R project is like making a partitioned folder that acts itself a bit like a working directory, with all subdirectories within the folder containing the .Rproj file also being connected to that directory. So if someone needs to work with your code and data, you would have a nice self contained folder that you can zip up and send to them and they would be able to work with it right away without having to reset working directories or figure out where all the data is all over again.\r\nHowever, what happens when you have a different operating system that your colleague? MACos and Windows use different notations for their filepaths and then what good would having a Rproject do for you?\r\nWell this is where using relative filepaths helps you out and {here} is well… here to help! You see {here} functions by assuming the place that your Rproject is at is the home directory and then merely looks for directories by name rather than by absolute paths. So instead of having to say read_csv(\"C:\\Users\\German\\Documents\\UCSB\\data\\example.csv\"), you would instead write read_csv(here(\"data\", \"example.csv\")), not only is it much less to write, but it ignores differences in filepath notation and allows for you to much more easily reproduce code and share it with others without having to worry about the differences in operating systems or filepath structures!\r\nI hope that this has been insightful and that you play with some more reproducible data science!\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-02-01T18:33:18-08:00",
+    "last_modified": "2022-02-02T18:34:01-08:00",
     "input_file": {}
   }
 ]
