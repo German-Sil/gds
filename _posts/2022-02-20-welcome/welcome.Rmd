@@ -40,7 +40,7 @@ lizards <- read_csv(here("_posts", "2022-02-20-welcome","data", "lizards.csv")) 
 
 Data visualization is an important part of exploring your data so that you can see what the data looks like before making a decision on how to analyze it. This set of code makes a combined point and box plot as a way of showing data spread and data summary statistics. A similar plot can be achieved by making violin plots, but I find this way more visually appealing. 
 
-```{r, fig.cap="**Figure 1** Boxplots and respective data point showing the total length for female lizards by respective species. Plots indicate that median female *Cnemidophorus uniparens* total length is less than the median female *Cnemidophorus tessalatus* length.", fig.align='center'}
+```{r, fig.cap="Boxplots and respective data point showing the total length for female lizards by respective species. Plots indicate that median female *Cnemidophorus uniparens* total length is less than the median female *Cnemidophorus tessalatus* length.", fig.align='center'}
 
 ggthemr::ggthemr('dust')
 
