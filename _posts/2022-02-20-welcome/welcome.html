@@ -87,37 +87,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Let's Talk Reproducible Data Science</title>
+  <title>Data Visualization and T-tests</title>
 
-  <meta property="description" itemprop="description" content="Learn about two tools to help you work with data in a more reproducible way"/>
+  <meta property="description" itemprop="description" content="Exploring data and performing a type of hypothesis testing"/>
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2022-02-02"/>
-  <meta property="article:created" itemprop="dateCreated" content="2022-02-02"/>
+  <meta property="article:published" itemprop="datePublished" content="2022-02-20"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-02-20"/>
   <meta name="article:author" content="Germán Silva"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Let&#39;s Talk Reproducible Data Science"/>
+  <meta property="og:title" content="Data Visualization and T-tests"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Learn about two tools to help you work with data in a more reproducible way"/>
+  <meta property="og:description" content="Exploring data and performing a type of hypothesis testing"/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Let&#39;s Talk Reproducible Data Science"/>
-  <meta property="twitter:description" content="Learn about two tools to help you work with data in a more reproducible way"/>
+  <meta property="twitter:title" content="Data Visualization and T-tests"/>
+  <meta property="twitter:description" content="Exploring data and performing a type of hypothesis testing"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Let's Talk Reproducible Data Science"]},{"type":"character","attributes":{},"value":["Learn about two tools to help you work with data in a more reproducible way"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Germán Silva"]}]}]},{"type":"character","attributes":{},"value":["02-02-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Visualization and T-tests"]},{"type":"character","attributes":{},"value":["Exploring data and performing a type of hypothesis testing\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Germán Silva"]}]}]},{"type":"character","attributes":{},"value":["2022-02-20"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/header-attrs-2.11/header-attrs.js","welcome_files/jquery-3.6.0/jquery-3.6.0.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.map","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["data/lizards.csv","welcome_files/figure-html5/unnamed-chunk-2-1.png","welcome_files/figure-html5/unnamed-chunk-4-1.png","welcome_files/figure-html5/unnamed-chunk-4-2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1439,6 +1439,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="welcome_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="welcome_files/kePrint-0.0.1/kePrint.js"></script>
+  <link href="welcome_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="welcome_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="welcome_files/popper-2.6.0/popper.min.js"></script>
   <link href="welcome_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1459,7 +1461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Let's Talk Reproducible Data Science","description":"Learn about two tools to help you work with data in a more reproducible way","authors":[{"author":"Germán Silva","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-02-02T00:00:00.000-08:00","citationText":"Silva, 2022"}
+{"title":"Data Visualization and T-tests","description":"Exploring data and performing a type of hypothesis testing","authors":[{"author":"Germán Silva","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-02-20T00:00:00.000-08:00","citationText":"Silva, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1469,28 +1471,196 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Let’s Talk Reproducible Data Science</h1>
+<h1>Data Visualization and T-tests</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Learn about two tools to help you work with data in a more reproducible way</p>
+<p><p>Exploring data and performing a type of hypothesis testing</p></p>
 </div>
 
 <div class="d-byline">
   Germán Silva  
   
-<br/>02-02-2022
+<br/>2022-02-20
 </div>
 
 <div class="d-article">
-<h1 id="intro">Intro</h1>
-<p>I’m sure that if you are least somewhat familiar with coding then you have had to deal with the issue of having to navigate file paths and working directories. Maybe you have even had to work with someone’s code and had to update broken file paths or reset hard coded working directories? If that sounds like you, you might have thought to yourself, “F**k this! There must be a much easier way to deal with this stuff!”</p>
-<p>Well there is no need to swear anymore as there totally is a much easier way to do this and in a way that will be reproducible for others to do! Let me introduce you to two little things that will perhaps make your life much easier: the <code>{here}</code> package and <code>Rprojects</code>.</p>
-<h1 id="so-what-are-here-and-rprojects">So what are <code>{here}</code> and <code>Rprojects</code>?</h1>
-<p>Simply put they are a way to work within self-contained folders with relative file paths.</p>
-<p>You see a R project is like making a partitioned folder that acts itself a bit like a working directory, with all subdirectories within the folder containing the <code>.Rproj</code> file also being connected to that directory. So if someone needs to work with your code and data, you would have a nice self contained folder that you can zip up and send to them and they would be able to work with it right away without having to reset working directories or figure out where all the data is all over again.</p>
-<p>However, what happens when you have a different operating system that your colleague? MACos and Windows use different notations for their filepaths and then what good would having a Rproject do for you?</p>
-<p>Well this is where using relative filepaths helps you out and <code>{here}</code> is well… <em>here</em> to help! You see <code>{here}</code> functions by assuming the place that your Rproject is at is the home directory and then merely looks for directories by name rather than by absolute paths. So instead of having to say <code>read_csv("C:\Users\German\Documents\UCSB\data\example.csv")</code>, you would instead write <code>read_csv(here("data", "example.csv"))</code>, not only is it much less to write, but it ignores differences in filepath notation and allows for you to much more easily reproduce code and share it with others without having to worry about the differences in operating systems or filepath structures!</p>
-<p>I hope that this has been insightful and that you play with some more reproducible data science!</p>
+<h1 id="overview">Overview</h1>
+<p>This blog post highlights an example of code done for an assignment in ESM 206 at UCSB’s Bren School of Environmental Science and Managment. The task looks at data from the 2017 update by Lightwood, D. of the Jornada LTER lizard pitfall data from 1989 to 2006. The main question examined in the code is the differences in length (mm) between females of two lizard species: <em>Cnemidophorus uniparens</em> (Desert Grassland lizard) and <em>Cnemidophorus tessalatus</em> (Colorado Checkered lizard). Methods used to address this question include: exploratory data visualization, box and scatter plots, summary statistics, t-tests, and Cohen’s d, among other general data science practices. Each code chunk will be proceeded with explanations for the code.</p>
+<h1 id="code-and-explanations">Code and Explanations</h1>
+<p>This is the set up chunk which allows for the setting of rendering options, such as the suppression of warnings and messages, but also for the attaching of packages that will be useful through out the task at hand.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/knitr/man/opts_chunk.html'>opts_chunk</a></span><span class='op'>$</span><span class='fu'>set</span><span class='op'>(</span>echo <span class='op'>=</span> <span class='cn'>TRUE</span>, message <span class='op'>=</span> <span class='cn'>FALSE</span>, warning <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+<span class='co'># attach packages</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://here.r-lib.org/'>here</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/eclarke/ggbeeswarm'>ggbeeswarm</a></span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>By using <code>read_csv()</code> we are able to open a .csv file into the code. The subsequent code allows us to clean and wrangle the data into a more manageable format and removes excess information that is not related to the task we are performing. In this case, I kept columns related to sex, species, and body length, and then filtered for rows that contained the individuals of the species and sex that were were comparing.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Creation of a stored object that includes a simplified version of the data</span>
+<span class='va'>lizards</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"_posts"</span>, <span class='st'>"2022-02-20-welcome"</span>,<span class='st'>"data"</span>, <span class='st'>"lizards.csv"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='co'># read in the data</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>spp</span>, <span class='va'>sex</span>, <span class='va'>total_length</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='co'># </span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>sex</span> <span class='op'>==</span> <span class='st'>"F"</span>,
+         <span class='va'>spp</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"CNUN"</span>, <span class='st'>"CNTE"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<h3 id="looking-at-the-data">Looking at the Data</h3>
+<p>Data visualization is an important part of exploring your data so that you can see what the data looks like before making a decision on how to analyze it. This set of code makes a combined point and box plot as a way of showing data spread and data summary statistics. A similar plot can be achieved by making violin plots, but I find this way more visually appealing.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>ggthemr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/ggthemr/man/ggthemr.html'>ggthemr</a></span><span class='op'>(</span><span class='st'>'dust'</span><span class='op'>)</span>
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>lizards</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x<span class='op'>=</span><span class='va'>spp</span>, y<span class='op'>=</span><span class='va'>total_length</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span> <span class='co'># call data and mapping</span>
+  <span class='fu'><a href='https://rdrr.io/pkg/ggbeeswarm/man/geom_beeswarm.html'>geom_beeswarm</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill<span class='op'>=</span><span class='va'>spp</span><span class='op'>)</span>, shape<span class='op'>=</span> <span class='fl'>21</span>, color <span class='op'>=</span> <span class='st'>"brown"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># add beeswarm plot</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill<span class='op'>=</span><span class='va'>spp</span><span class='op'>)</span>,
+               alpha<span class='op'>=</span><span class='fl'>0.45</span>,
+               width <span class='op'>=</span> <span class='fl'>0.2</span>,
+               outlier.color <span class='op'>=</span> <span class='cn'>NA</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># overlay boxplot</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'>calecopal</span><span class='fu'>::</span><span class='fu'>cal_palette</span><span class='op'>(</span><span class='st'>"coastaldune1"</span>,
+                                                     n<span class='op'>=</span> <span class='fl'>2</span>, 
+                                                     type <span class='op'>=</span> <span class='st'>"discrete"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Cnemidophorus tessalatus"</span>, 
+                              <span class='st'>"Cnemidophorus uniparens"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># x-axis tick labels</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>ggtitle</a></span><span class='op'>(</span><span class='st'>"Total Length of Observed Female Lizards by Species"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># title</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span> <span class='co'># theme edits</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>x<span class='op'>=</span> <span class='st'>"Species Name"</span>,
+       y<span class='op'>=</span> <span class='st'>"Total Length (mm)"</span><span class='op'>)</span> <span class='co'># add labels for axes</span>
+</code></pre>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="welcome_files/figure-html5/unnamed-chunk-2-1.png" alt="**Figure 1** Boxplots and respective data point showing the total length for female lizards by respective species. Plots indicate that median female *Cnemidophorus uniparens* total length is less than the median female *Cnemidophorus tessalatus* length." width="624" />
+<p class="caption">
+Figure 1: <strong>Figure 1</strong> Boxplots and respective data point showing the total length for female lizards by respective species. Plots indicate that median female <em>Cnemidophorus uniparens</em> total length is less than the median female <em>Cnemidophorus tessalatus</em> length.
+</p>
+</div>
+</div>
+<p>Once data has been visualized, it is important to obtain actual values for the summary statistics so you can talk in terms of actual numbers. This can often be achieved with the creation of a summary data frame and a table. The <code>group_by()</code> and <code>summarise()</code> functions are helpful in the creation of a summary data frame, with <code>kable()</code> being able to create a table from the resulting data frame.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Obtain summary stats</span>
+<span class='va'>lizards_summary</span> <span class='op'>&lt;-</span> <span class='va'>lizards</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>spp <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
+    <span class='va'>spp</span> <span class='op'>==</span> <span class='st'>"CNTE"</span> <span class='op'>~</span> <span class='st'>"C. tessalatus"</span>,
+    <span class='va'>spp</span> <span class='op'>==</span> <span class='st'>"CNUN"</span> <span class='op'>~</span> <span class='st'>"C. uniparens"</span>
+  <span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>spp</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>mean <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>total_length</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>,
+            sd <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/sd.html'>sd</a></span><span class='op'>(</span><span class='va'>total_length</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>,
+            sample_size <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/context.html'>n</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
+<span class='co'># Convert into finalized table</span>
+<span class='fu'>kableExtra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/kable.html'>kable</a></span><span class='op'>(</span><span class='va'>lizards_summary</span>,
+                  col.names <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Species"</span>, 
+                                <span class='st'>"Mean Length (mm)"</span>, 
+                                <span class='st'>"Standard Deviation (mm)"</span>, 
+                                <span class='st'>"Sample Size"</span><span class='op'>)</span>,
+                  caption <span class='op'>=</span> <span class='st'>"Table 1 Summary Statistics for Female Lizards by Species"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'>kableExtra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/kableExtra/man/kable_classic.html'>kable_classic</a></span><span class='op'>(</span>full_width <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</code></pre>
+</div>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 1: </span>Table 1 Summary Statistics for Female Lizards by Species
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Species
+</th>
+<th style="text-align:right;">
+Mean Length (mm)
+</th>
+<th style="text-align:right;">
+Standard Deviation (mm)
+</th>
+<th style="text-align:right;">
+Sample Size
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+C. tessalatus
+</td>
+<td style="text-align:right;">
+244.8929
+</td>
+<td style="text-align:right;">
+47.32499
+</td>
+<td style="text-align:right;">
+28
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C. uniparens
+</td>
+<td style="text-align:right;">
+147.6000
+</td>
+<td style="text-align:right;">
+34.55341
+</td>
+<td style="text-align:right;">
+47
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="hypothesis-testing">Hypothesis Testing</h3>
+<p><strong>Question</strong>:</p>
+<p>Is there a significant difference in total length difference in mean total length between female lizards for the two species?</p>
+<p>To answer this question, with a parametric hypothesis test, we must first check for any violation of the assumptions for a t-test. This can be achieved with a histogram and a QQplot. The code below creates two simple versions of both plots to check for these violations.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Explore data to ensure that hypothesis testing can be done without violation of assumptions</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>lizards</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x<span class='op'>=</span> <span class='va'>total_length</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span> 
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>spp</span><span class='op'>)</span>
+</code></pre>
+</div>
+<img src="welcome_files/figure-html5/unnamed-chunk-4-1.png" width="624" />
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>lizards</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>sample<span class='op'>=</span><span class='va'>total_length</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_qq.html'>geom_qq</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>spp</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="welcome_files/figure-html5/unnamed-chunk-4-2.png" width="624" /></p>
+</div>
+<p>Both diagnostics are a bit concerning. Histograms seems to be somewhat close to normal, but QQ plots are a bit more concerning for assumptions of hypothesis testing. Law of large numbers would imply that means of samples would be normally distributed, both have moderately sized samples (n= 29 and 47 respectively). With Law of Large numbers, we can proceed with the t-test.</p>
+<p>To perform a t-test, we need our data to be free of <code>NA</code> values. We first filter the data for the individuals from each respective group and remove the <code>NA</code> values. Two metrics are used to get an understanding of the differences between the two populations of lizards: Cohen’s d and t-test p-value. To get these metrics, I used <code>effsize::cohen_d()</code> and <code>t.test()</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Performing a t-test</span>
+<span class='va'>cnte</span> <span class='op'>&lt;-</span> <span class='va'>lizards</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>spp</span> <span class='op'>==</span> <span class='st'>"CNTE"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/r/stats/na.fail.html'>na.omit</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>cnun</span> <span class='op'>&lt;-</span> <span class='va'>lizards</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>spp</span> <span class='op'>==</span> <span class='st'>"CNUN"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
+  <span class='fu'><a href='https://rdrr.io/r/stats/na.fail.html'>na.omit</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='va'>cohen_d</span> <span class='op'>&lt;-</span> <span class='fu'>effsize</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/effsize/man/cohen.d.html'>cohen.d</a></span><span class='op'>(</span><span class='va'>cnte</span><span class='op'>$</span><span class='va'>total_length</span>, <span class='va'>cnun</span><span class='op'>$</span><span class='va'>total_length</span><span class='op'>)</span>
+<span class='va'>t_test</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span><span class='op'>(</span><span class='va'>cnte</span><span class='op'>$</span><span class='va'>total_length</span>, <span class='va'>cnun</span><span class='op'>$</span><span class='va'>total_length</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p><strong>Answer</strong>:</p>
+<p>While there may be potential violations of assumptions, hypothesis testing can be done under the assumption that the law of large numbers applies to this data sample. Hypothesis testing shows that the mean length difference of 97.29 mm is statistically significant (<em>p-value</em> = 3.75 * 10<sup>-12</sup>), with the p-value indicating that there is a 3.75 * 10<sup>-10</sup> % chance that we would get sample means that were at least this different if the true means are the same, and a Cohen’s d (<em>d</em> = 2.42) indicating that there is a true and noticeable difference between the mean lengths of the two species.</p>
+<h2 id="references">References:</h2>
+<p>Bui, An, Lowman, Heili, Guerra, Ana Sofia, and Miller-ter Kuile, Ana (2021). “calecopal: A California-inspired Package of Color Palettes.” R package version 0.1.0.</p>
+<p>Clarke, Erik and Sherrill-Mix, Scott (2017). ggbeeswarm: Categorical Scatter (Violin Point) Plots. R package version 0.6.0. <a href="https://CRAN.R-project.org/package=ggbeeswarm" class="uri">https://CRAN.R-project.org/package=ggbeeswarm</a></p>
+<p>Lightfoot, D. (2017). Lizard pitfall trap data (LTER-II, LTER-III) ver 36. Environmental Data Initiative. <a href="https://doi.org/10.6073/pasta/ff37b4cace16a9943575f3fd7067064e" class="uri">https://doi.org/10.6073/pasta/ff37b4cace16a9943575f3fd7067064e</a></p>
+<p>Müller, Kirill (2020). “here: A Simpler Way to Find Your Files.” R package version 1.0.1. <a href="https://CRAN.R-project.org/package=here" class="uri">https://CRAN.R-project.org/package=here</a></p>
+<p>Torchiano M (2020). effsize: Efficient Effect Size Computation. doi: 10.5281/zenodo.1480624 (URL: <a href="https://doi.org/10.5281/zenodo.1480624" class="uri">https://doi.org/10.5281/zenodo.1480624</a>), R package version 0.8.1, &lt;URL: <a href="https://CRAN.R-project.org/package=effsize" class="uri">https://CRAN.R-project.org/package=effsize</a>&gt;.</p>
+<p>Wickham et al., (2019). “Welcome to the tidyverse.” Journal of Open Source Software, 4(43), 1686, <a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></p>
+<p>Zhu, Hao (2021). “kableExtra: Construct Complex Table with ‘kable’ and Pipe Syntax.” R package version 1.3.4. <a href="https://CRAN.R-project.org/package=kableExtra" class="uri">https://CRAN.R-project.org/package=kableExtra</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

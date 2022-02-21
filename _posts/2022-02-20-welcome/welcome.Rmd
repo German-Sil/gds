@@ -16,7 +16,7 @@ This blog post highlights an example of code done for an assignment in ESM 206 a
 
 # Code and Explanations
 
-This is the set up chunk which allows for the setting of rendering options, such as the supression of warnings and messages, but also for the attaching of packages that will be useful through out the task at hand. 
+This is the set up chunk which allows for the setting of rendering options, such as the suppression of warnings and messages, but also for the attaching of packages that will be useful through out the task at hand. 
 
 ```{r setup, include=TRUE, message=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
