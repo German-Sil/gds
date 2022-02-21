@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Interests
 
-As a biophysical geographer, I study various physical and biological processes as they relate through space and time. More specifically, my research interests are in the realm of coastal wetland remote sensing, biogeochemistry, and other biophysical processes. I study how remote sensing can be used in tandem with field-based data to make assess landscape and spatial responses to disturbance and environmental change. I am particularly interested in managed and restored systems and how these data can help in the assessment and management of these wetlands. Additionally, I have a strong interest in developing better data literacy, data systems, and data science for the betterment of the environment. 
+As a biophysical geographer, I study various physical and biological processes as they relate through space and time. More specifically, my research interests are in the realm of coastal wetland remote sensing, biogeochemistry, and other biophysical processes. I study how remote sensing can be used in tandem with field-based data to assess landscape and spatial responses to disturbance and environmental change. I am particularly interested in managed and restored systems and how these data can help in the assessment and management of these wetlands. Additionally, I have a strong interest in developing better data literacy, data systems, and data science for the betterment of the environment. 
 
 Below are some research projects that I have contributed to.
 
