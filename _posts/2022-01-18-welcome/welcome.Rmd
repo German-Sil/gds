@@ -1,5 +1,5 @@
 ---
-title: "Let's Talk Reproducible Data Sci"
+title: "Let's Talk Reproducible Data Science"
 description:
   Learn about two tools to help you work with data in a more reproducible way
 author:

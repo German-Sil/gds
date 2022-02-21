@@ -1,0 +1,146 @@
+---
+title: "Data Visualization and T-tests"
+description: |
+  Exploring data and performing a type of hypothesis testing
+author:
+  - name: Germán Silva
+date: 2022-02-20
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+# Overview
+
+This blog post highlights an example of code done for an assignment in ESM 206 at UCSB's Bren School of Environmental Science and Managment. The task looks at data from the 2017 update by Lightwood, D. of the Jornada LTER lizard pitfall data from 1989 to 2006. The main question examined in the code is the differences in length (mm) between females of two lizard species: *Cnemidophorus uniparens* (Desert Grassland lizard) and *Cnemidophorus tessalatus* (Colorado Checkered lizard). Methods used to address this question include: exploratory data visualization, box and scatter plots, summary statistics, t-tests, and Cohen's d, among other general data science practices. Each code chunk will be proceeded with explanations for the code. 
+
+# Code and Explanations
+
+This is the set up chunk which allows for the setting of rendering options, such as the supression of warnings and messages, but also for the attaching of packages that will be useful through out the task at hand. 
+
+```{r setup, include=TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+# attach packages
+library(tidyverse)
+library(here)
+library(ggbeeswarm)
+```
+
+By using `read_csv()` we are able to open a .csv file into the code. The subsequent code allows us to clean and wrangle the data into a more manageable format and removes excess information that is not related to the task we are performing. In this case, I kept columns related to sex, species, and body length, and then filtered for rows that contained the individuals of the species and sex that were were comparing.
+
+```{r}
+# Creation of a stored object that includes a simplified version of the data
+lizards <- read_csv(here("_posts", "2022-02-20-welcome","data", "lizards.csv")) %>% # read in the data
+  select(spp, sex, total_length) %>% # 
+  filter(sex == "F",
+         spp %in% c("CNUN", "CNTE"))
+```
+
+### Looking at the Data
+
+Data visualization is an important part of exploring your data so that you can see what the data looks like before making a decision on how to analyze it. This set of code makes a combined point and box plot as a way of showing data spread and data summary statistics. A similar plot can be achieved by making violin plots, but I find this way more visually appealing. 
+
+```{r, fig.cap="**Figure 1** Boxplots and respective data point showing the total length for female lizards by respective species. Plots indicate that median female *Cnemidophorus uniparens* total length is less than the median female *Cnemidophorus tessalatus* length.", fig.align='center'}
+
+ggthemr::ggthemr('dust')
+
+ggplot(lizards, aes(x=spp, y=total_length))+ # call data and mapping
+  geom_beeswarm(aes(fill=spp), shape= 21, color = "brown") + # add beeswarm plot
+  geom_boxplot(aes(fill=spp),
+               alpha=0.45,
+               width = 0.2,
+               outlier.color = NA) + # overlay boxplot
+  scale_fill_manual(values = calecopal::cal_palette("coastaldune1",
+                                                     n= 2, 
+                                                     type = "discrete"))+
+  scale_x_discrete(labels = c("Cnemidophorus tessalatus", 
+                              "Cnemidophorus uniparens")) + # x-axis tick labels
+  ggtitle("Total Length of Observed Female Lizards by Species") + # title
+  theme(legend.position = "none") + # theme edits
+  labs(x= "Species Name",
+       y= "Total Length (mm)") # add labels for axes
+```
+
+Once data has been visualized, it is important to obtain actual values for the summary statistics so you can talk in terms of actual numbers. This can often be achieved with the creation of a summary data frame and a table. The `group_by()` and `summarise()` functions are helpful in the creation of a summary data frame, with `kable()` being able to create a table from the resulting data frame.  
+
+```{r}
+# Obtain summary stats
+lizards_summary <- lizards %>% 
+  mutate(spp = case_when(
+    spp == "CNTE" ~ "C. tessalatus",
+    spp == "CNUN" ~ "C. uniparens"
+  )) %>% 
+  group_by(spp) %>% 
+  summarise(mean = mean(total_length, na.rm = TRUE),
+            sd = sd(total_length, na.rm = TRUE),
+            sample_size = n())
+# Convert into finalized table
+kableExtra::kable(lizards_summary,
+                  col.names = c("Species", 
+                                "Mean Length (mm)", 
+                                "Standard Deviation (mm)", 
+                                "Sample Size"),
+                  caption = "Table 1 Summary Statistics for Female Lizards by Species") %>% 
+  kableExtra::kable_classic(full_width = FALSE)
+```
+
+### Hypothesis Testing
+
+**Question**: 
+
+Is there a significant difference in total length difference in mean total length between female lizards for the two species?
+
+To answer this question, with a parametric hypothesis test, we must first check for any violation of the assumptions for a t-test. This can be achieved with a histogram and a QQplot. The code below creates two simple versions of both plots to check for these violations.
+
+```{r}
+# Explore data to ensure that hypothesis testing can be done without violation of assumptions
+ggplot(data = lizards, aes(x= total_length))+
+  geom_histogram()+ 
+  facet_wrap(~spp)
+ggplot(lizards, aes(sample=total_length))+
+  geom_qq()+
+  facet_wrap(~spp)
+```
+
+Both diagnostics are a bit concerning. Histograms seems to be somewhat close to normal, but QQ plots are a bit more concerning for assumptions of hypothesis testing. Law of large numbers would imply that means of samples would be normally distributed, both have moderately sized samples (n= 29 and 47 respectively). With Law of Large numbers, we can proceed with the t-test.
+
+To perform a t-test, we need our data to be free of `NA` values. We first filter the data for the individuals from each respective group and remove the `NA` values. Two metrics are used to get an understanding of the differences between the two populations of lizards: Cohen's d and t-test p-value. To get these metrics, I used `effsize::cohen_d()` and `t.test()`.
+
+```{r}
+# Performing a t-test
+cnte <- lizards %>% 
+  filter(spp == "CNTE") %>% 
+  na.omit()
+cnun <- lizards %>% 
+  filter(spp == "CNUN") %>% 
+  na.omit()
+cohen_d <- effsize::cohen.d(cnte$total_length, cnun$total_length)
+t_test <- t.test(cnte$total_length, cnun$total_length)
+```
+
+**Answer**:
+
+While there may be potential violations of assumptions, hypothesis testing can be done under the assumption that the law of large numbers applies to this data sample. Hypothesis testing shows that the mean length difference of `r round((lizards_summary$mean[1] - lizards_summary$mean[2]), 2)` mm is statistically significant (*p-value* = `r round(t_test$p.value * 10^12, 2)` * 10^-12^), with the p-value indicating that there is a `r round(t_test$p.value * 10^12, 2)` * 10^-10^ % chance that we would get sample means that were at least this different if the true means are the same, and a Cohen's d (*d* = `r round(cohen_d$estimate, 2)`) indicating that there is a true and noticeable difference between the mean lengths of the two species.
+
+
+## References:
+
+Bui, An, Lowman, Heili, Guerra, Ana Sofia, and Miller-ter Kuile, Ana (2021). "calecopal: A California-inspired Package of Color Palettes." R package version 0.1.0.
+
+Clarke, Erik and Sherrill-Mix, Scott (2017). ggbeeswarm: Categorical Scatter (Violin
+  Point) Plots. R package version 0.6.0. https://CRAN.R-project.org/package=ggbeeswarm
+  
+Lightfoot, D. (2017). Lizard pitfall trap data (LTER-II, LTER-III) ver 36. Environmental Data Initiative. https://doi.org/10.6073/pasta/ff37b4cace16a9943575f3fd7067064e 
+
+Müller, Kirill (2020). "here: A Simpler Way to Find Your Files." R package version 1.0.1.
+  https://CRAN.R-project.org/package=here
+  
+Torchiano M (2020). effsize: Efficient Effect Size Computation. doi:
+  10.5281/zenodo.1480624 (URL: https://doi.org/10.5281/zenodo.1480624), R package version
+  0.8.1, <URL: https://CRAN.R-project.org/package=effsize>.
+
+Wickham et al., (2019). "Welcome to the tidyverse." Journal of Open Source Software,
+  4(43), 1686, https://doi.org/10.21105/joss.01686
+
+Zhu, Hao (2021). "kableExtra: Construct Complex Table with 'kable' and Pipe Syntax." R
+  package version 1.3.4. https://CRAN.R-project.org/package=kableExtra
