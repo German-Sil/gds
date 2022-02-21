@@ -1,6 +1,7 @@
 ---
 title: "Curriculum vitae"
 description: |
+  Curriculum Vitae
 ---
 
 ```{r setup, include=FALSE}
@@ -8,10 +9,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # GERMÁN D. SILVA
-Ph.D. Student | Department of Geography
-University of California Santa Barbara, Ellison Hall 5803, Santa Barbara, CA | german.silva@geog.ucsb.edu
+Ph.D. Student | Department of Geography, University of California, Santa Barbara | german.silva@geog.ucsb.edu
 
 ## EDUCATION
+
 *Ph.D.*, Geography, University of California, Santa Barbara                                                **Exp. 2025**<br>
 Committee: Jennifer King, Dar Roberts, Ian Walker<br>
 Research Interests: Wetland ecology, Coastal Restoration, biogeochemistry <br>
@@ -28,22 +29,27 @@ Thesis: “Effect of California’s Drought on Pickleweed Vigor in a Californian
 Wetland: A Remote Sensing Approach”<br>
 
 ## PROFESSIONAL POSITIONS
+
 - *Graduate Teaching Assistant*, University of California, Santa Babara  **September 2021-December 2021**<br>
 - *Graduate Research Fellow*, University of California, Santa Barbara                               **September 2019 – Present** <br>
 - *Campus Cartographer*, California State University, Stanislaus                                       **June 2017 – August 2019**<br>
 
 ## PUBLICATIONS
+
 **2019** *Silva, G.*, “Pickleweed Vigor in a Californian Salt Marsh: A Remote Sensing Approach.” Honors Program Journal of Exploratory Research.
 
 ## PRESENTATIONS
+
 - **2021** “Change Detection in Carpinteria Salt Marsh Following the Montecito Debris Flow” Paper, California Geographical Society Conference<br>
 - **2020** “Using Remotely Sensed Data to Map Extent of Debris in a Californian Salt Marsh” Poster, National oSTEM Conference <br>
 - **2019** “Pickleweed Vigor in a Californian Salt Marsh: A Remote Sensing Approach” Paper, 33rd  Annual Student Research Competition at CSU Stanislaus <br>
-- **2018** “Effect of California’s Drought on Pickleweed Health in Salinas River National Wildlife Refuge: A Remote Sensing Approach” Poster, Association of Pacific Coast Geographer<br>
+- **2018** “Effect of California’s Drought on Pickleweed Health in Salinas River National Wildlife Refuge: A Remote Sensing Approach” Poster, Association of Pacific Coast Geographers<br>
 
 
 ## SERVICE
-### University of California, Santa Barbara     
+
+### University of California, Santa Barbara  
+
 - oSTEM Co-President           **2021 – Present**
 - oSTEM Graduate Student Mentor						         **2021 – Present**
 - oSTEM Graduate Student Liaison						          **2020 – 2021 ** 
@@ -52,6 +58,7 @@ Wetland: A Remote Sensing Approach”<br>
 - Geography Student Representative, Graduate Student Association                            **2019 – 2020**
 
 ### California State University, Stanislaus
+
 - Campus Tree Interactive Web Map                                                                                     **2018**
 - GIS Intern for Merced County through Office of Service Learning                                **2018 **
 - Student Representative, University Student Union Board of Directors                        **2017 – 2019 **
@@ -63,6 +70,7 @@ Wetland: A Remote Sensing Approach”<br>
 - Treasurer, Geography Club                                                                                                   **2016 – 17/2018 – 2019 **
 
 ## MEMBERSHIPS
+
 - Out in Science, Technology, Engineering, and Mathematics<br>
 - American Association for the Advancement of Science<br>
 - Gamma Theta Upsilon Honor Society<br>
@@ -72,6 +80,7 @@ Wetland: A Remote Sensing Approach”<br>
 - California Geographical Society<br>
 
 ## AWARDS, FELLOWSHIPS, AND HONORS
+
 - *Geosystems Award*, California Geographical Society                                                  **April 2021 **<br>
 - *Graduate Research Fellow*, National Science Foundation                                         **September 2019 – Present ** <br>
 - *Eugene Cota-Robles Fellow*, UC Santa Barbara Graduate Division                      **September 2019 – Present ** <br>
