@@ -1,7 +1,8 @@
 name: "."
-title: "GDS"
+title: "Wetland Geography"
 description: |
   GDS
+theme: postcard.css
 output_dir: "docs"
 navbar:
   right:
