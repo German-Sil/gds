@@ -8,8 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style type="text/css">body {font-family: 'Roboto Slab', serif;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style type="text/css">body {font-family: 'Roboto Mono', serif;}</style>
+
+    <style>
+      @media screen and (min-width: 768px) {
+        .container {
+          width: 768px;
+        }
+      }
+
+      body {
+        background-color: #f5e9dd;
+      }
+    </style>
 
     <title>Germán Silva</title>
 
@@ -708,17 +720,17 @@
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below                      */
           </style>
-          <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Amiri');
-          @import url('https://fonts.googleapis.com/css2?family=Bitter');
+          <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Cardo');
+          @import url('https://fonts.googleapis.com/css2?family=Alata');
           @import url('https://fonts.googleapis.com/css2?family=DM+Mono');
 
           html {
             /*-- font rules --*/
-            --heading-font: "Amiri", serif;
-            --title-font: "Amiri", serif;
+            --heading-font: "Alata", sans-serif;
+            --title-font: "Alata", sans-serif;
             --mono-font: "DM Mono", monospace;
-            --body-font: "Bitter", sans-serif;
-            --navbar-font: "Amiri", serif;
+            --body-font: "Cardo", serif;
+            --navbar-font: "Alata", sans-serif;
             /*-- Main font sizes --*/
             --title-size:      18px;
             --body-size:       1.06rem;
@@ -739,6 +751,10 @@
             --heading-color:   rgba(0, 0, 0, 0.5);
             --body-size:       0.8rem;
             --body-color:      rgba(0, 0, 0, 0.8);
+          }
+
+          body{
+            background-color: #faf7f2;
           }
 
           d-title h1{
@@ -783,11 +799,11 @@
 
           .distill-site-header {
             --title-size:       1.25rem;
-            --text-color:       #667b68;
+            --text-color:       white;
             --text-size:        1rem;
-            --hover-color:      white;
-            --bkgd-color:       #A9BD93;
-          }
+            --hover-color:      #A9BD93;
+            --bkgd-color:       #667b68;
+          } #667b68
 
           .distill-site-footer {
             --text-color:       rgba(255, 255, 255, 0.8);
@@ -970,7 +986,7 @@
           <a href="index.html">Home</a>
           <a href="about.html">Research</a>
           <a href="cv.html">CV</a>
-          <a href="blog.html">Blog</a>
+          <a href="blog.html">Portfolio</a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
           </nav>
@@ -979,64 +995,66 @@
           <!--radix_placeholder_site_before_body-->
           <!--/radix_placeholder_site_before_body-->
     
-    <div class="container-fluid d-none d-lg-block d-xl-block">
-      <div class="d-flex row flex-row vh-100">
-        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
-          <div class="mx-auto text-center">
-            <div class="p-3">
-              <img src="german.jpg" style="height:15rem" class="rounded">
-            </div>
-            <div class="p-2">
-              <h1>Germán Silva</h1>
-            </div>
-            <hr style="width:60%;"/>
-            <div class="p-2">
-              <div id="icon-list">
-                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                    <a href=https://linkedin.com/in/german-silva>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        LinkedIn
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://twitter.com/envirogeography>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Twitter
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://github.com/German-Sil>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        GitHub
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=mailto:german.silva@geog.ucsb.edu>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Email
-                      </button>
-                    </a>
-                  </li>
-                                  </ul>
-              </div>
-            </div>
+    <div class="container d-none d-lg-block d-xl-block">
+      <div class="row mt-5">
+        <div class="col-7 mt-5">
+          <h1>Germán Silva</h1>
+          <hr style="max-width: 200px; margin-left:0;" style="width:60%;"/>
+          <div class="my-3" id="icon-list">
+            <ul class="list-inline">
+                            <li class="list-inline-item">
+                <a href=https://linkedin.com/in/german-silva>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    LinkedIn
+                  </button>
+                </a>
+              </li>
+                            <li class="list-inline-item">
+                <a href=https://twitter.com/envirogeography>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    Twitter
+                  </button>
+                </a>
+              </li>
+                            <li class="list-inline-item">
+                <a href=https://github.com/German-Sil>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    GitHub
+                  </button>
+                </a>
+              </li>
+                            <li class="list-inline-item">
+                <a href=mailto:german.silva@geog.ucsb.edu>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    Email
+                  </button>
+                </a>
+              </li>
+                          </ul>
           </div>
         </div>
-        <div class="d-flex flex-column vh-100 border-left"></div>
-        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
-          <div class="my-5" id="content">
-            <p>I am a PhD Student and NSF Graduate Research Fellow at UC Santa Barbara’s <a href="https://www.geog.ucsb.edu/">Department of Geography</a> working with <a href="https://www.geog.ucsb.edu/people/faculty/jennifer-king">Jennifer King</a>, <a href="https://www.geog.ucsb.edu/people/faculty/dar-roberts">Dar Roberts</a>, and <a href="https://www.geog.ucsb.edu/people/faculty/ian-walker">Ian Walker</a>.</p>
-            <p>I am a biophysical geographer with an interest in coastal wetland ecosystems. My research interests are in remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. I largely focus on wetland landscape and spatial response to disturbance and environmental change. When I’m not running around in marshes or hard at work processing images, I can be found doing nature photography, cooking, binge watching Netflix, catching Pokemon, and taking plenty of walks with the dog.</p>
+
+        <div class="col mr-4 mt-5">
+          <img src="german.jpg" style="height:15rem" class="rounded float-right">
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <div id="telmatology" class="section level2">
+          <h2>Telmatology</h2>
+          <p>(tel·ma·tol·o·gy | ˌtelməˈtäləjē ) <em>noun</em></p>
+          <p>Definition: a branch of physical geography concerned with the study of wetlands (such as marshes or swamps)</p>
+          </div>
+          <div id="bio" class="section level2">
+          <h2>Bio</h2>
+          <p>I am a PhD Student and NSF Graduate Research Fellow at UC Santa Barbara’s <a href="https://www.geog.ucsb.edu/">Department of Geography</a> working with <a href="https://www.geog.ucsb.edu/people/faculty/jennifer-king">Jennifer King</a>, <a href="https://www.geog.ucsb.edu/people/faculty/dar-roberts">Dar Roberts</a>, and <a href="https://www.geog.ucsb.edu/people/faculty/ian-walker">Ian Walker</a>.</p>
+          <p>I am a telmatologist with a interest in coastal wetland ecosystems. My background is in biophysical geography, with a focus in remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. I largely focus on wetland landscape and spatial response to disturbance and environmental change. When I’m not running around in marshes or hard at work processing images, I can be found doing nature photography, cooking, binge watching Netflix, catching Pokemon, and taking plenty of walks with my dog.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
+    <div class="container d-block d-lg-none d-xl-none">
       <div class="d-flex flex-row justify-content-center">
         <div class="d-flex flex-col">
           <div class="mx-auto">
@@ -1052,31 +1070,39 @@
               <div class="col-8 p-1 text-center">
                 <div class="list-group">
                                     <a href=https://linkedin.com/in/german-silva>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded" style="background-color: #f5e9dd; color: black;border-color: black;">
                       LinkedIn
                     </button>
                   </a>
                                     <a href=https://twitter.com/envirogeography>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded" style="background-color: #f5e9dd; color: black;border-color: black;">
                       Twitter
                     </button>
                   </a>
                                     <a href=https://github.com/German-Sil>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded" style="background-color: #f5e9dd; color: black;border-color: black;">
                       GitHub
                     </button>
                   </a>
                                     <a href=mailto:german.silva@geog.ucsb.edu>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded" style="background-color: #f5e9dd; color: black;border-color: black;">
                       Email
                     </button>
                   </a>
                                   </div>
               </div>
             </div>
-            <div class="p pt-4 px-5">
+            <div class="mt-4 mb-5 mx-2">
+              <div id="telmatology" class="section level2">
+              <h2>Telmatology</h2>
+              <p>(tel·ma·tol·o·gy | ˌtelməˈtäləjē ) <em>noun</em></p>
+              <p>Definition: a branch of physical geography concerned with the study of wetlands (such as marshes or swamps)</p>
+              </div>
+              <div id="bio" class="section level2">
+              <h2>Bio</h2>
               <p>I am a PhD Student and NSF Graduate Research Fellow at UC Santa Barbara’s <a href="https://www.geog.ucsb.edu/">Department of Geography</a> working with <a href="https://www.geog.ucsb.edu/people/faculty/jennifer-king">Jennifer King</a>, <a href="https://www.geog.ucsb.edu/people/faculty/dar-roberts">Dar Roberts</a>, and <a href="https://www.geog.ucsb.edu/people/faculty/ian-walker">Ian Walker</a>.</p>
-              <p>I am a biophysical geographer with an interest in coastal wetland ecosystems. My research interests are in remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. I largely focus on wetland landscape and spatial response to disturbance and environmental change. When I’m not running around in marshes or hard at work processing images, I can be found doing nature photography, cooking, binge watching Netflix, catching Pokemon, and taking plenty of walks with the dog.</p>
+              <p>I am a telmatologist with a interest in coastal wetland ecosystems. My background is in biophysical geography, with a focus in remote sensing, biogeochemistry, and other biophysical processes of coastal wetlands. I largely focus on wetland landscape and spatial response to disturbance and environmental change. When I’m not running around in marshes or hard at work processing images, I can be found doing nature photography, cooking, binge watching Netflix, catching Pokemon, and taking plenty of walks with my dog.</p>
+              </div>
             </div>
         </div>
       </div>
@@ -1088,10 +1114,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-      <!--radix_placeholder_site_after_body-->
-      <!--/radix_placeholder_site_after_body-->
-      <!--radix_placeholder_navigation_after_body-->
-      <!--/radix_placeholder_navigation_after_body-->
-  
+          <!--radix_placeholder_site_after_body-->
+          <!--/radix_placeholder_site_after_body-->
+          <!--radix_placeholder_navigation_after_body-->
+          <!--/radix_placeholder_navigation_after_body-->
+    
   </body>
 </html>

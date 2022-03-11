@@ -1,7 +1,6 @@
-name: "."
+name: "Telmatology"
 title: "Wetland Geography"
 description: |
-  GDS
 theme: postcard.css
 output_dir: "docs"
 navbar:
@@ -12,6 +11,6 @@ navbar:
       href: about.html
     - text: "CV"
       href: cv.html
-    - text: "Blog"
+    - text: "Portfolio"
       href: blog.html
 output: distill::distill_article
