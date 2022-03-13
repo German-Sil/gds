@@ -1,0 +1,124 @@
+---
+title: "Principle Component Analysis"
+description: |
+  A way of understanding variable relationships
+author:
+  - name: Germán Silva
+    url: {}
+date: 2022-03-12
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+# Overview
+
+**Summary**:
+
+This report was done as part of UCSB's ESM 244 *Advanced Data Analysis* and looks at miscellaneous environmental variables round the world at the country level from Zander Venter on Kaggle. I explore the relationships between some of these variables by using principle component analysis (PCA). Variables were selected the minimize the number of rows removed by NA deletion. Final selected variables include accessibility to cities, cropland cover, tree canopy cover, annual mean rainfall and temperature, and cloudiness. The relationships between these variables are interpreted from a biplot and screeplot created from the PCA results. 
+
+**Data Source**
+
+Data compiled by Zander Venter (2018). "Environmental variables for world countries". Accessed from: https://www.kaggle.com/zanderventer/environmental-variables-for-world-countries
+
+# Principle Component Analysis
+
+## Set up code:
+
+```{r setup, include=TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+## attach libraries
+
+library(tidyverse)
+library(here)
+library(ggfortify)
+```
+
+## Read in the data:
+
+```{r}
+# Read in the data
+world_env <- read_csv(here("data", "world_env_vars.csv")) %>% # open csv
+  select(Country,
+         accessibility_to_cities, 
+         cropland_cover, 
+         tree_canopy_cover, 
+         rain_mean_annual, 
+         temp_mean_annual, 
+         cloudiness) %>% # select the variables we want to explore
+  drop_na() # drops columns with NAs as PCA only works with numeric values
+```
+
+## Perform the PCA:
+
+PCA is easily performed in `R` with the `prcomp()` function. Scaling is performed to avoid any potential issues with comparisons between variables with different units. As PCA can only be done on numeric variables, the country names were removed for this step. 
+
+```{r}
+# Performing the PCA
+world_env_pca <- world_env %>% # pipe in the data
+  select(!Country) %>% # remove the country
+  prcomp(scale. = TRUE) # rescaling of data is performed
+
+```
+
+## Create biplot and screeplot:
+
+A biplot is one way to interpret the results from a PCA. The arrows indicate the strength and correlation of the relationships of the variables to the principle components (PCs). The direction of the arrows relative to each other give a sense of their correlation or lack thereof in the axes determined by the different PCs.
+
+```{r, fig.align='center', fig.cap="Biplot showing relationships between variables in PC1 and PC2. A few relationships between the variables stick out: 1) cloudiness, tree canopy cover, and mean annual rainfall seem to be positively correlated, 2) mean annual temperature and cropland are strongly negatively correlated with the angle between them being near 180^o^, 3) cropland cover and mean annual temp seem to have no to a weak correlation with cloudiness, tree canopy cover, and mean annual rainfall."}
+
+#Creating the biplot via autoplot()
+
+autoplot(world_env_pca, # pca data
+         data = world_env, # original data
+         loadings = TRUE, # show loadings
+         loadings.label = TRUE, # label loadings
+         loadings.colour = "black", # loading color
+         loadings.label.colour = "black", # loading label color
+         loadings.label.vjust = -.5) + # vertical justification
+  ggtitle("Principle Component 1 and 2 Biplot (SILVA)") + # title
+  labs(x = "Principle Component 1 (43.47%)", 
+       y= "Principle Component 2 (23.42%)")+ # axis labels 
+   theme(plot.title = element_text(color = "#5b4f41", size = 16),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash",
+                                      color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+            axis.line = element_line(color = "#5b4f41")) # change themes
+```
+
+Screeplots allow us to see how much of the variance in the data is explained by each of the PCs. Typically when ~80% of the variance is explained by the PCs is good. 
+
+```{r,fig.align='center', fig.cap="Screeplot showing the amount of variance explained by each principle component."}
+# Creating screeplot
+sd_vec <- world_env_pca$sdev # standard deviation
+var_vec <- sd_vec^2 # variance
+
+pc_names <- colnames(world_env_pca$rotation) # names of PCs
+
+pct_expl_df <- data.frame(v = var_vec, # new data frame for screeplot; variance
+                          pct_v = var_vec / sum(var_vec), # percent of variance
+                          pc = fct_inorder(pc_names)) %>%  # orders rows
+  mutate(pct_label = paste0(round(pct_v * 100, 1), "%")) # adds character %
+
+ggplot(pct_expl_df, aes(x = pc, y = v))+ # graphs via PC and variance
+  geom_col()+
+  geom_text(aes(label = pct_label), vjust = 0, nudge_y = 0.008)+
+  labs(x = "Principle Components",
+       y = "Variances") +
+  ggtitle("PCA Screeplot")+
+  theme(plot.title = element_text(hjust = .5))
+```
+
+# Takeaways:
+
+- Cloudiness, tree canopy cover, and mean annual rainfall have a positively correlated relationship with each other. 
+  - This makes conceptual sense as countries with more rain would have more cloudy days and likely be able to support more trees.
+- Mean annual temperature and cropland have a strong negatively correlated relationship with the angle between them being near 180^o^.
+  - We might expect hotter countries (like Saudi Arabia) to have less arable land due to the extreme heat due to other environmental factors. 
+- Cropland cover and mean annual temp seem to be not to weakly correlated with cloudiness, tree canopy cover, and mean annual rainfall. 
+- The first two principle components account for 66.9% of the total variance in the data with over 80% being explained by the first three principle components. 
