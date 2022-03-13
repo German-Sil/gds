@@ -1,0 +1,193 @@
+---
+title: "Salmon Time Series Analysis"
+description: |
+  A short description of the post.
+author:
+  - name: Germán Silva
+    url: {}
+date: 2022-03-12
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+```{r setup, include=TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+# attach packages
+library(tidyverse)
+library(here)
+library(lubridate)
+library(tsibble)
+library(feasts)
+library(slider)
+library(patchwork)
+```
+
+# Overview {.tabset .tabset-fade .tabset-pills}
+
+**Summary**:
+
+This report was done as part of UCSB's ESM 244 Advanced Data Analysis class and explores a subset of the adult fish passage data from the Willamette Falls fish ladder on the Willamette River (Oregon, USA) from 2001-01-01 to 2010-12-31. The analyses focus on three types of salmon: coho, jack coho, and steelhead. A variety of time series visualization and analysis techniques are highlighted. Analysis of the data includes 1) visualization of the original times series, 2) seasonplots for the data, and 3) annual counts by species. 
+
+![**Caption**: Salmon swimming up a fish ladder. Photo by John Trax/Alamy Stock Photo](https://hakaimagazine.com/wp-content/uploads/bonneville-fish-ladders-1200x798.jpg)
+
+
+**Data Source**: 
+
+Columbia River Research, "Data Access in Real Time (DART) Adult Passage Graphics and Text", http://www.cbr.washington.edu/dart/query/adult_graph_text
+
+```{r}
+# opening the data and subsetting for salmon of interest and creating time series data
+adult_pass <- read_csv(here('data', 'willamette_fish_passage.csv')) %>% 
+  janitor::clean_names() %>%  
+  select(date, coho, steelhead, jack_coho) %>% 
+  mutate(date = mdy(date)) %>% 
+  as_tsibble(key = NULL, index = date)
+
+# changing NA values to 0
+adult_pass[is.na(adult_pass)] = 0
+
+# reformating data frame into a long format for easy of use in plots
+adult_pass_long <- adult_pass %>% 
+  pivot_longer(!date, names_to = "species", values_to = "count")
+```
+
+
+## Original Time Series
+
+Time series data can be visualized and interpreted in many different ways. The code below shows how you would create a simple plot of the original time series data and how you might compare the the data between multiple groups (in this case fish species).
+
+```{r, fig.align='center', fig.cap= "Plots showing the counts of the fish for each date. From each plot we can get a general sense of how the three fish differ in their seasonality."}
+# create the three ggplots visualizing the three time series
+
+ggplot(adult_pass, aes(x = date))+
+  geom_line(aes(y = coho, color = "Coho")) +
+  geom_line(aes(y = steelhead, color = "Steelhead")) +
+  geom_line(aes(y = jack_coho, color = "Jack Coho")) +
+  labs(x = "Date",
+       y = "# of Adult Fish",
+       color = "Legend")+
+  scale_color_manual(values = c("Coho" = "#ff8362", 
+                                "Steelhead" = "#DEADA1", 
+                                "Jack Coho" = "#6d748c"))+
+  ggtitle("Adult Fish Counts by Species at Willamette Falls")+
+  theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash", 
+                                      color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+            axis.line = element_line(color = "#5b4f41"))
+```
+
+**Takeaway Points**:
+
+ - Steelhead numbers seem to spike at a different time of year than Coho and Jack Coho
+ - Coho and Jack Coho numbers are much more punctuated than the Steelhead numbers
+ - Coho numbers seem to be increasing over time
+
+## Seasonplots
+
+Seasonplots are another way that you can interpret and analyze time series data. 
+
+```{r, fig.align='center', fig.cap="Season Plots for all ten years for each species of fish. Earlier seasons are colored in a light color and darker colors represent later seasons. Both types of Coho peak around October, while Steelhead peak around June." }
+# create a season plot for each species
+coho_seaon <- adult_pass %>% 
+  gg_season(y = coho) +
+  theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash", color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+            axis.line = element_line(color = "#5b4f41"),
+            legend.position = "none")+
+  scale_colour_viridis_c(direction = -1) +
+  labs(x = "Date",
+       y = "")+
+  ggtitle("Coho")
+
+steelhead_season <- adult_pass %>% 
+   gg_season(y = steelhead) +
+  theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash", color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+            axis.line = element_line(color = "#5b4f41"),
+            legend.position = "none")+
+  scale_color_viridis_c(direction = -1)+
+  labs(x = "Date",
+       y =  "")+
+  ggtitle("Steelhead")
+
+jack_season <- adult_pass %>% 
+   gg_season(y = jack_coho) +
+  theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash", color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+            axis.line = element_line(color = "#5b4f41"))+
+  scale_color_viridis_c(direction = -1)+
+  labs(x = "Date",
+       y = "# of Adult Fish",
+       color = "# of Season")+
+  ggtitle("Jack Coho")
+
+patchwork <- coho_seaon /jack_season / steelhead_season
+
+patchwork
+```
+
+**Takeaway Points**:
+
+- Coho and Jack Coho salmon have similar seasonality
+- Coho and Jack Coho numbers seem to be on the rise as time goes on
+- Steelhead numbers peak around April to July and don't show as clear of an increase as Jack Coho and Coho
+
+## Annual counts by species
+
+```{r, fig.align='center', fig.cap="Bar plots showing total annual counts of adult fish by sepcies from 2000 to 2010. Steelhead have the largest number of individuals, which could be due to having a longer season than the other two species."}
+adult_annual <- adult_pass_long %>% 
+  index_by(year = ~year(.)) %>% 
+  group_by(species, year) %>% 
+  summarize(annual_sum = sum(count))
+
+species.labs <- c("coho" = "Coho", "jack_coho" = "Jack Coho", "steelhead" = "Steelhead")
+
+ggplot(adult_annual, aes(x = year, y = annual_sum, fill = species))+
+  geom_bar(stat = "identity")+
+  facet_wrap(~species, labeller = labeller(species = species.labs))+
+  scale_fill_manual(values = c("coho" = "#ff8362", "steelhead" = "#DEADA1", "jack_coho" = "#6d748c"))+
+  ggtitle("Annual Adult Fish Counts by Species")+
+  labs(x = "Year",
+       y = "Annual Counts",
+       fill = "Species")+
+  theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
+            plot.background = element_rect("white"),
+            panel.background = element_rect("#faf7f2"),
+            panel.grid = element_line(linetype= "longdash", color = "#f0ece1"),
+            axis.text = element_text(color = "#5b4f41"),
+            axis.title = element_text(color = "#5b4f41"),
+            strip.background = element_rect("white"),
+        strip.text = element_text(color = "#5b4f41"),
+            axis.line = element_line(color = "#5b4f41"),
+        legend.position = "none")
+```
+
+**Takeaway Points**:
+
+- Jack Coho have the lowest annual counts out of the three species assessed
+- Annual Coho numbers seem to be on the rise between 2000 and 2010.
+- Despite Coho having the largest peak on daily passages, as seen in Fig. 1, steelhead have the largest number of annual passings.
