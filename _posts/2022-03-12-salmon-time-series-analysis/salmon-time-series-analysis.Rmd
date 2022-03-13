@@ -1,7 +1,7 @@
 ---
 title: "Salmon Time Series Analysis"
 description: |
-  A short description of the post.
+  Some examples of time series visualization and wrangling
 author:
   - name: Germán Silva
     url: {}
@@ -93,7 +93,7 @@ ggplot(adult_pass, aes(x = date))+
 
 ## Seasonplots
 
-Seasonplots are another way that you can interpret and analyze time series data. 
+Seasonplots are another way that you can interpret and analyze time series data. Seasonplots allow you to compare seasons (in this case years) to one another so you can get a sense as to how the data is changing from season to season and year to year. Here we use `gg_season()` and `{patchwork}` to make a comprehensive plot that shows how seasons change from year to year for each fish. 
 
 ```{r, fig.align='center', fig.cap="Season Plots for all ten years for each species of fish. Earlier seasons are colored in a light color and darker colors represent later seasons. Both types of Coho peak around October, while Steelhead peak around June." }
 # create a season plot for each species
@@ -158,18 +158,24 @@ patchwork
 
 ## Annual counts by species
 
+Lastly, time series can be compiled and wrangled to get different formats of datasets to visualize a variety of things (like annual counts). The `tsibble` data frame format makes this easy and allows us to index by year and group by species easily making it easy to compile a daily data set into a yearly data set that we can use to make comparisons of annual counts. 
+
 ```{r, fig.align='center', fig.cap="Bar plots showing total annual counts of adult fish by sepcies from 2000 to 2010. Steelhead have the largest number of individuals, which could be due to having a longer season than the other two species."}
 adult_annual <- adult_pass_long %>% 
   index_by(year = ~year(.)) %>% 
   group_by(species, year) %>% 
   summarize(annual_sum = sum(count))
 
-species.labs <- c("coho" = "Coho", "jack_coho" = "Jack Coho", "steelhead" = "Steelhead")
+species.labs <- c("coho" = "Coho", 
+                  "jack_coho" = "Jack Coho", 
+                  "steelhead" = "Steelhead")
 
 ggplot(adult_annual, aes(x = year, y = annual_sum, fill = species))+
   geom_bar(stat = "identity")+
   facet_wrap(~species, labeller = labeller(species = species.labs))+
-  scale_fill_manual(values = c("coho" = "#ff8362", "steelhead" = "#DEADA1", "jack_coho" = "#6d748c"))+
+  scale_fill_manual(values = c("coho" = "#ff8362", 
+                               "steelhead" = "#DEADA1", 
+                               "jack_coho" = "#6d748c"))+
   ggtitle("Annual Adult Fish Counts by Species")+
   labs(x = "Year",
        y = "Annual Counts",
@@ -177,7 +183,8 @@ ggplot(adult_annual, aes(x = year, y = annual_sum, fill = species))+
   theme(plot.title = element_text(color = "#5b4f41", hjust = 0.5),
             plot.background = element_rect("white"),
             panel.background = element_rect("#faf7f2"),
-            panel.grid = element_line(linetype= "longdash", color = "#f0ece1"),
+            panel.grid = element_line(linetype= "longdash", 
+                                      color = "#f0ece1"),
             axis.text = element_text(color = "#5b4f41"),
             axis.title = element_text(color = "#5b4f41"),
             strip.background = element_rect("white"),
