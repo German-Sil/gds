@@ -1,7 +1,7 @@
 ---
 title: "Germán Silva"
 site: distill::distill_website
-image: "german.jpg"
+image: "german_sil.jpg"
 links:
   - label: LinkedIn
     url: "https://linkedin.com/in/german-silva"
