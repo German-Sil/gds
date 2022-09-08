@@ -36,6 +36,8 @@ Wetland: A Remote Sensing Approach”<br>
 
 ## PUBLICATIONS
 
+**2022** *Silva, G.D.*, Roberts, D.A., McFadden, J.P., King, J.Y., "Shifts in Salt Marsh Vegetation Landcover after Debris Flow Deposition." Remote Sensing 14(12):2819. https://doi.org/10.3390/rs14122819 <br>
+
 **2019** *Silva, G.*, “Pickleweed Vigor in a Californian Salt Marsh: A Remote Sensing Approach.” Honors Program Journal of Exploratory Research.
 
 ## PRESENTATIONS
@@ -72,6 +74,7 @@ Wetland: A Remote Sensing Approach”<br>
 
 ## MEMBERSHIPS
 
+- American Geophysical Union
 - Out in Science, Technology, Engineering, and Mathematics<br>
 - American Association for the Advancement of Science<br>
 - Gamma Theta Upsilon Honor Society<br>
