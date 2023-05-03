@@ -34,6 +34,22 @@ Wetland: A Remote Sensing Approach”<br>
 - *Graduate Teaching Assistant*, University of California, Santa Babara  **September 2021-December 2021**<br>
 - *Campus Cartographer*, California State University, Stanislaus                                       **June 2017 – August 2019**<br>
 
+## RESEARCH EXPERIENCE
+
+**Surface Biology & Geology High Frequency Timeseries (SHIFT)**                               **Feb. 2020 – Present**<br> 
+University of California, Santa Barbara<br>
+Research field campaign to collect wetland plant traits and soil salinity samples
+as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensors
+
+## MENTORSHIP EXPERIENCE
+
+- Marian Walker, *University of California, Santa Barbara*, Undergraduate               **Jan. 2021 – Present** <br>
+- Ruiming Song, *University of California, Santa Barbara*, Undergraduate                **April 2022 – Dec. 2022**<br>
+- Ella Phillips, *University of California, Santa Barbara*, Undergraduate               **April 2022 – June 2022**<br>
+- Brianna Lee, *University of California, Santa Barbara*, Undergraduate                 **April 2022 – June 2022**<br>
+- Madi Arndt, *University of California, Santa Barbara*, Undergraduate                  **April 2022 – June 2022**<br>
+- Chenjia Liu, *University of California, Santa Barbara*, Undergraduate                 **Jan. 2022 – June 2022**<br>
+
 ## PUBLICATIONS
 
 **2022** *Silva, G.D.*, Roberts, D.A., McFadden, J.P., King, J.Y., "Shifts in Salt Marsh Vegetation Landcover after Debris Flow Deposition." Remote Sensing 14(12):2819. https://doi.org/10.3390/rs14122819 <br>
