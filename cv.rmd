@@ -37,7 +37,7 @@ Wetland: A Remote Sensing Approach”<br>
 ## RESEARCH EXPERIENCE
 
 **Surface Biology & Geology High Frequency Timeseries (SHIFT)**                               **Feb. 2020 – Present**<br> 
-University of California, Santa Barbara<br>
+*University of California, Santa Barbara*<br>
 Research field campaign to collect wetland plant traits and soil salinity samples
 as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensors
 
