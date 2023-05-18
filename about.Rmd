@@ -27,6 +27,7 @@ I will be using the data collected to improve and adapt soil salinity estimating
 ## Salt Stress and Plant Traits
 
 In relation to my remote sensing work, I am also running a greenhouse experiment to gain insights on the functional relationship between soil salinity levels and plant traits, especially anthocyanin content. I am using different salinity treatments to induce prolonged salt stress in *Salicornia pacifica* (pickleweed) to measure the magnitude of the effect salinity has on different plant traits. This information will help improve our understanding of the short-term dynamics of intermittently tidal marsh systems and inform their management. Additionally, this has potential in improving and informing vegetation monitoring plans for coastal wetlands, help in the assessment of vulnerability and migration, and to improve soil salinity estimation models.
+
 # Past Projects
 
 ## Bulk Density Effects on Coastal Sage Scrub
