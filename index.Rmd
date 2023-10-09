@@ -1,5 +1,5 @@
 ---
-title: "Germán Silva"
+title: "Germán D. Silva"
 site: distill::distill_website
 image: "german_sil.jpg"
 links:
