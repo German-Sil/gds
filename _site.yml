@@ -13,4 +13,6 @@ navbar:
       href: cv.html
     - text: "Portfolio"
       href: blog.html
+    - text: "Philosophy"
+      href: philo.html
 output: distill::distill_article
