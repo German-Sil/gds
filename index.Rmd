@@ -3,14 +3,14 @@ title: "Germán D. Silva"
 site: distill::distill_website
 image: "german_sil.jpg"
 links:
-  - icon: fa fa-linkedIn
-    href: https://linkedin.com/in/german-silva
-  - icon: fa fa-twitter
-    href: https://twitter.com/envirogeography
-  - icon: fa fa-gitHub
-    href: https://github.com/German-Sil
-  - icon: fa fa-envelope
-    href: mailto:german.silva@geog.ucsb.edu
+  - label: LinkedIn
+    url: "https://linkedin.com/in/german-silva"
+  - label: Twitter
+    url: "https://twitter.com/envirogeography"
+  - label: GitHub
+    url: "https://github.com/German-Sil"
+  - label: E-mail
+    url: "mailto:german.silva@geog.ucsb.edu"
 output:
   postcards::solana
 ---
