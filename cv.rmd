@@ -13,7 +13,7 @@ Ph.D. Candidate | Department of Geography, University of California, Santa Barba
 
 ## EDUCATION
 
-*Ph.D., Geography*, University of California, Santa Barbara                                                **Exp. 2025**<br>
+*Ph.D., Geography*, University of California, Santa Barbara                                                **Expected June 2025**<br>
 Committee: Jennifer King (Co-Chair), Dar Roberts (Co-Chair), Ian Walker, Kristin Byrd<br>
 Research Interests: Wetland soil salinity, biogeochemistry, ecological monitoring <br>
 
@@ -31,9 +31,40 @@ Wetland: A Remote Sensing Approach”<br>
 ## PROFESSIONAL POSITIONS
 
 - *Graduate Research Fellow*, University of California, Santa Barbara                               **September 2019 – Present** <br>
+- *Graduate Teaching Associate*, University of California, Santa Barbara                    **Aug. 2024 – Sept 2024** <br>
 - *Maximizing Student Potential Fellow*, NASA/Caltech Jet Propulsion Lab **June 2023 - September 2023** <br>
 - *Graduate Teaching Assistant*, University of California, Santa Babara  **September 2021-December 2021**<br>
 - *Campus Cartographer*, California State University, Stanislaus                                       **June 2017 – August 2019**<br>
+
+## TEACHING AND PEDAGOGICAL EXPERIENCE
+
+### Instructor of Record
+
+**GEOG W8 Intro to Global Warming**                                                                   **Aug. 2024 – Sept. 2024** <br> 
+*University of California, Santa Barbara* <br>
+Course provided students with an overview of global warming and climate change processes. Course focused on developing critical thinking and writing skills related to climate related topics from the physics of climate change to social, economic, and environmental impacts of climate change. Assignments included guided article discussions, AI and climate literacy, and personal reflection of climate change. <br>
+
+### Teaching Assistant
+
+*GEOG 176A Intro to Geographic Information Systems*                                        **Sept. 2021 – Dec. 2021** <br>
+*University of California, Santa Barbara* <br>
+Course provided students with an introductory overview of the theory and techniques of geographic information systems. As a teaching associate, I provided supplementary lectures of weekly topics, led weekly computer labs, and assisted students with GIS project design and execution for final projects.  <br>
+
+
+### Pedagogical Training
+
+*Certificate in College and University Teaching*                                                        **Expected 2025** <br>
+*University of California, Santa Barbara* <br>
+The UCSB Certificate in College and University Teaching (CCUT) is designed for students who wish to demonstrate superior competence and experience in teaching at the university or college level. Certificate requirements include completion or attainment of several teaching-related skills and experiences culminating in independent instruction of an entire course with the support of a UCSB faculty mentor. Requirements include development of course materials, the completion of an evidence-based pedagogical project, analysis of student evaluations, and more. <br>
+
+*Certificate in Inclusive Teaching*                                                                                  **Expected 2025** <br>
+*University of California, Santa Barbara* <br>
+The Certificate in Inclusive Teaching (CIT) is designed for UCSB graduate students and postdocs, to help them foster inclusive classrooms, effectively mentor a diverse student body, and enhance their professional development. Students are required to attend and engage in workshops from the following categories: Course Design, Instruction, Mentorship & Student Support, Professional Development. <br>
+
+*Summer Teaching Institute for Associates (STIA)*                                                     **Sept. 2024** <br>
+*University of California, Santa Barbara* <br>
+The UCSB Summer Teaching Institute for Associates (STIA) supports graduate student instructors who have responsibility for an undergraduate course during Summer Sessions. The STIA Associate has completed a series of online assignments, cooperative peer review, pedagogical skills training activities, and mentoring meetings with a UC faculty member. Specific topics include: course planning; syllabus design and review, student learning outcomes, course and lecture planning, giving lectures, active learning, designing and grading assessments, giving and receiving feedback on learning, issues common to first time instructors, online teaching and learning. <br>
+
 
 ## RESEARCH EXPERIENCE
 
@@ -44,8 +75,21 @@ as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensor
 
 ## MENTORSHIP EXPERIENCE
 
-- Kathryn Kolb, *University of California, Santa Barbara*, Undergraduate                **Oct. 2023 – Present**<br>
-- Marian Walker, *University of California, Santa Barbara*, Undergraduate               **Jan. 2021 – Present** <br>
+### Graduate Student Peer Mentor
+- Sebastian Alvarez, *University of California, Santa Barbara*, PhD student               **Aug. 2024 – Present** <br>
+- Wenxin Yang, *University of California, Santa Barbara*, PhD student                     **Jan. 2024 – Present** <br>
+- Xue Yan, *University of California, Santa Barbara*, PhD student                         **Jan. 2024 – Present** <br>
+- Sarah Payne, *University of California, Santa Barbara*, PhD student                     **Oct. 2023 – Present** <br>
+- My-Thu Tran, *University of California, Santa Barbara/San Diegeo State University*, PhD student   **Oct. 2023 – May 2024** <br>
+
+### Undergraduate Student Mentees (* indicates independent project)
+
+- Damian Padilla, *University of California, Santa Barbara*, Undergraduate               **Oct. 2024 – Present**<br>
+- Aidan Flynn, *University of California, Santa Barbara*, Undergraduate                 **Oct. 2024 – Present**<br>
+- Abby Nestor, *University of California, Santa Barbara*, Undergraduate                 **Oct. 2024 – Present**<br>
+- Danae Stathatos\*, *University of California, Santa Barbara*, Undergraduate           **April. 2024 – Present**<br>
+- Kathryn Kolb\*, *University of California, Santa Barbara*, Undergraduate                **Oct. 2023 – Present**<br>
+- Marian Walker\*, *University of California, Santa Barbara*, Undergraduate               **Jan. 2021 – March 2024** <br>
 - Ruiming Song, *University of California, Santa Barbara*, Undergraduate                **April 2022 – Dec. 2022**<br>
 - Ella Phillips, *University of California, Santa Barbara*, Undergraduate               **April 2022 – June 2022**<br>
 - Brianna Lee, *University of California, Santa Barbara*, Undergraduate                 **April 2022 – June 2022**<br>
@@ -54,12 +98,16 @@ as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensor
 
 ## PUBLICATIONS
 
+**In Review** *Silva, G.D.*, Roberts, D.A., Byrd, K.B., Chadwick, K.D., Walker, I.J., and King, J.Y. “Using imaging spectroscopy and elevation in machine learning to estimate soil salinity in intermittently tidal wetlands.” *Ecosphere* <br>
+
 **2022** *Silva, G.D.*, Roberts, D.A., McFadden, J.P., King, J.Y., "Shifts in Salt Marsh Vegetation Landcover after Debris Flow Deposition." Remote Sensing 14(12):2819. https://doi.org/10.3390/rs14122819 <br>
 
 **2019** *Silva, G.*, “Pickleweed Vigor in a Californian Salt Marsh: A Remote Sensing Approach.” Honors Program Journal of Exploratory Research.
 
 ## PRESENTATIONS
 
+- **2024** “Integrating Imaging Spectroscopy and Elevation in Machine Learning for Soil Salinity Estimation in Coastal Wetlands” Paper, Ecological Society of America Annual Meeting <br>
+- **2023** "Remote Predictors of Soil Salinity in an Intermittently Tidal Wetland” Poster, American Geophysical Union Annual Conference <br> 
 - **2022** "Shifts in Salt Marsh Vegetation Landcover After Debris Flow Deposition" Paper, European Spatial Data for Coastal and Marine Remote Sensing<br>
 - **2021** “Change Detection in Carpinteria Salt Marsh Following the Montecito Debris Flow” Paper, California Geographical Society Conference<br>
 - **2020** “Using Remotely Sensed Data to Map Extent of Debris in a Californian Salt Marsh” Poster, National oSTEM Conference <br>
@@ -70,6 +118,7 @@ as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensor
 
 ### University of California, Santa Barbara  
 
+- Geography Grad Student Peer Mentor                                                                             **2022 – Present** 
 - California Geographical Society, Student Representative **2022-Present**
 - Faculty Committee Student Representive **2022-Present**
 - Outreach Committee **2021-2022**
@@ -90,29 +139,34 @@ as part of the NASA Jet Propulsion Lab’s pathfinder campaign for future sensor
 - Social Media Coordinator, Geography Club                                                                       **2017 – 2019 **
 - Volunteer, Geocaching activity at Science Day                                                                 **2017 **
 - Director of Environment, Associated Students, Inc. Board of Directors                       **2016 – 2017 **
-- Treasurer, Geography Club                                                                                                   **2016 – 17/2018 – 2019 **
+- Treasurer, Geography Club                                                               **2016 – 17/2018 – 2019 **
 
 ## MEMBERSHIPS
 
+- Ecological Society of America 
 - California Estuarine Research Society <br>
 - Coastal and Estuarine Research Federation <br>
 - American Geophysical Union <br>
 - Out in Science, Technology, Engineering, and Mathematics<br>
 - American Association for the Advancement of Science<br>
 - Gamma Theta Upsilon Honor Society<br>
-- Society of Conservation GIS<br>
 - Association of Pacific Coast Geographers <br>
 - American Association of Geographers <br>
 - California Geographical Society<br>
 
-## AWARDS, GRANTS, FELLOWSHIPS, AND HONORS
+## GRANTS & FELLOWSHIPS
+
+- Eugene Cota-Robles Fellow, *UC Santa Barbara Graduate Division*       **Sep 2019 – Present **                               
+- UCSB Associated Students Coastal Fund, *$6515.60*	**June 2023** <br>
+- Graduate Research Fellow, *National Science Foundation*                           **Sep 2019 – Sep 2022** <br>
+- E. McNair Scholars Program, *California State University, Stanislaus*              **Jan 2018 – May 2019**                           
+
+
+## AWARDS AND HONORS
 
 - *Latinx American Travel Scholarship*, Association of Pacific Coast Geographers **October 2023**
-- *UCSB AS Coastal Fund, $6515.60*, UCSB Associated Students      **June 2023**
 - *Manuscript Monday Highlight*, Ladies of Landsat                                               **November 2022**<br>
 - *Geosystems Award*, California Geographical Society                                                  **April 2021 **<br>
-- *Graduate Research Fellow*, National Science Foundation                                         **September 2019 – Present ** <br>
-- *Eugene Cota-Robles Fellow*, UC Santa Barbara Graduate Division                      **September 2019 – Present ** <br>
 - *First Place Presentation*, 33rd  Annual Student Research Competition, CSU Stanislaus                                          **March 2018 **<br>
 - *David Lantis Scholarship Award*, California Geographical Society                             **April 2018 **<br>
 - *McNair Scholar*, CSU Stanislaus                                                                      **January 2018 – May 2019 **<br>
