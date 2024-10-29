@@ -86,7 +86,7 @@ Sebastian Alvarez, *University of California, Santa Barbara*, PhD student &nbsp;
 Wenxin Yang, *University of California, Santa Barbara*, PhD student &ensp; **Jan. 2024 – Present** <br>
 Xue Yan, *University of California, Santa Barbara*, PhD student &ensp; **Jan. 2024 – Present** <br>
 Sarah Payne, *University of California, Santa Barbara*, PhD student &ensp; **Oct. 2023 – Present** <br>
-My-Thu Tran, *UC Santa Barbara/San Diego State University*, PhD student &nbsp; **Oct. 2023 – May 2024** <br>
+My-Thu Tran, *University of California Santa Barbara/San Diego State University*, PhD student &nbsp; **Oct. 2023 – May 2024** <br>
 
 ### Undergraduate Student Mentees (\* indicates independent project)
 
@@ -119,15 +119,9 @@ Remote Sensing Approach.” *Honors Program Journal of Exploratory Research.* <b
 
 **2024** &ensp; “Integrating Imaging Spectroscopy and Elevation in Machine Learning for Soil Salinity Estimation in Coastal Wetlands” Paper,
     Ecological Society of America Annual Meeting <br>
-**2023** &ensp; "Remote Predictors of Soil Salinity in an Intermittently
-    Tidal Wetland” Poster, American Geophysical Union Annual Conference
-    <br>
-**2022** &ensp; "Shifts in Salt Marsh Vegetation Landcover After Debris
-    Flow Deposition" Paper, European Spatial Data for Coastal and Marine
-    Remote Sensing<br>
-**2021** &ensp; “Change Detection in Carpinteria Salt Marsh Following the
-    Montecito Debris Flow” Paper, California Geographical Society
-    Conference<br>
+**2023** &ensp; "Remote Predictors of Soil Salinity in an Intermittently Tidal Wetland” Poster, American Geophysical Union Annual Conference  <br>
+**2022** &ensp; "Shifts in Salt Marsh Vegetation Landcover After Debris Flow Deposition" Paper, European Spatial Data for Coastal and Marine   Remote Sensing<br>
+**2021** &ensp; “Change Detection in Carpinteria Salt Marsh Following the Montecito Debris Flow” Paper, California Geographical Society Conference<br>
 **2020** &ensp; “Using Remotely Sensed Data to Map Extent of Debris in a
     Californian Salt Marsh” Poster, National oSTEM Conference <br>
 **2019** &ensp; “Pickleweed Vigor in a Californian Salt Marsh: A Remote
@@ -186,15 +180,11 @@ Ronald E. McNair Scholars Program, *California State University, Stanislaus* &em
 
 ## AWARDS AND HONORS
 
-*Tom McKnight and Joan Clemons Award for an Outstanding Paper*, &emsp; **October 2024** <br>
-&emsp; Association of Pacific Coast Geographers <br>
+*Tom McKnight and Joan Clemons Award for an Outstanding Paper*, Association of Pacific Coast Geographers &emsp; **October 2024** <br>
 *1st place Graduate Paper Presentaton*, California Geographical Society &emsp; **April 2024** <br>
-*Latinx American Travel Scholarship*, &emsp; **October 2023**<br>
- &emsp; Association of Pacific Coast Geographers <br>
-*Geosystems Award for Applied/Physical Geography* &emsp; **October 2024**<br>
-&emsp;Association of Pacific Coast Geographers <br>
+*Latinx American Travel Scholarship*, Association of Pacific Coast Geographers &emsp; **October 2023**<br>
+*Geosystems Award for Applied/Physical Geography*, Association of Pacific Coast Geographers &emsp; **October 2024**<br>
 *Manuscript Monday Highlight*, Ladies of Landsat &emsp; **November 2022**<br>
 *Geosystems Award*, California Geographical Society &emsp; **April 2021**    <br>
-*First Place Presentation*, 33rd Annual Student Research Competition, &emsp; **March 2018** <br>
- &emsp; California State University, Stanislaus <br>
+*First Place Presentation*, 33rd Annual Student Research Competition, California State University, Stanislaus &emsp; **March 2018** <br>
 *David Lantis Scholarship Award*, California Geographical Society &emsp;  **April 2018** <br>
