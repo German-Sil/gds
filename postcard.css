@@ -11,7 +11,7 @@ html {
   --navbar-font: "Alata", sans-serif;
   /*-- Main font sizes --*/
   --title-size:      18px;
-  --body-size:       1.1rem;
+  --body-size:       1.2rem;
   --code-size:       14px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
@@ -64,7 +64,7 @@ d-article h3{
 }
 
 d-article {
-grid-template-columns: [screen-start] 1fr [text-start kicker-end] 2% 2% 2% 2% 2% 2% 2% 2% [text-end gutter-start] 2% [middle-end] 2% [page-end gutter-end] 1fr [screen-end];
+grid-template-columns: [screen-start]  auto[text-start kicker-end] 80% [text-end gutter-start] 2% [middle-end] 2% [page-end gutter-end] auto[screen-end];
 grid-column-gap: 10%;
 }
 
