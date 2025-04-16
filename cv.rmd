@@ -12,5 +12,5 @@ file: "German_Silva_CV.PDF"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![CV](German_Silva_CV.pdf){width=1500px height=1500px}
+![CV](German_Silva_CV.pdf){width=1250px height=1250px}
 
