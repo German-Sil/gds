@@ -1,7 +1,7 @@
 ---
 title: "Germán D. Silva"
 site: distill::distill_website
-image: "german_sil.jpg"
+image: "profile_pic.jpg"
 links:
   - label: LinkedIn
     url: "https://linkedin.com/in/german-silva"
