@@ -1,5 +1,5 @@
 ---
-title: "Germán D. Silva"
+title: "Dr. Germán D. Silva"
 site: distill::distill_website
 image: "profile_pic.jpg"
 links:
@@ -23,6 +23,8 @@ Definition: a branch of physical geography concerned with the study of wetlands 
 
 ## Bio
 
-I am a PhD Candidate and NSF Graduate Research Fellow at UC Santa Barbara's [Department of Geography](https://www.geog.ucsb.edu/) working with [Jennifer King](https://www.geog.ucsb.edu/people/faculty/jennifer-king), [Dar Roberts](https://www.geog.ucsb.edu/people/faculty/dar-roberts), [Ian Walker](https://www.geog.ucsb.edu/people/faculty/ian-walker), and [Kristin Byrd](https://www.usgs.gov/staff-profiles/kristin-byrd).
-
 I am a telmatologist with an interest in coastal wetland ecosystems. My background is in biophysical geography with an emphasis on remote sensing of landscape level processes. I largely focus on wetland landscape and spatial response to disturbance and environmental change, how we monitor these responses, and how we create tools and knowledge to advance our understanding of wetland processes for conservation and management goals. When I'm not running around in marshes or hard at work processing images, I can be found doing film photography, cooking, and trying out some good local eats.
+
+I recently recived my Ph.D. from UC Santa Barbara's [Department of Geography](https://www.geog.ucsb.edu/) where I was a NSF Graduate Research and Eugene Cota-Robles Fellow working with [Jennifer King](https://www.geog.ucsb.edu/people/faculty/jennifer-king), [Dar Roberts](https://www.geog.ucsb.edu/people/faculty/dar-roberts), [Ian Walker](https://www.geog.ucsb.edu/people/faculty/ian-walker), and [Kristin Byrd](https://www.usgs.gov/staff-profiles/kristin-byrd). Piror to my Ph.D., I had conducted research on post-fire debris flow impacts on salt marsh landcover (Master's Degree) and drought impacts on plant health in an intermittently tidal wetland (Bachelor's/McNair Research). 
+
+
