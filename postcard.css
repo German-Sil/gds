@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo');
-@import url('https://fonts.googleapis.com/css2?family=Alata');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
 
 html {
   /*-- font rules --*/
-  --heading-font: "Alata", sans-serif;
-  --title-font: "Alata", sans-serif;
+  --heading-font: "Lato", sans-serif;
+  --title-font: "Lato", sans-serif;
   --mono-font: "DM Mono", monospace;
   --body-font: "Cardo", serif;
-  --navbar-font: "Alata", sans-serif;
+  --navbar-font: "LAto", sans-serif;
   /*-- Main font sizes --*/
   --title-size:      18px;
   --body-size:       1.2rem;
