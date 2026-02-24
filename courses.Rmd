@@ -1,0 +1,23 @@
+---
+title: "courses"
+description: |
+  Teaching is part of the job
+---
+
+# Stanislaus State
+
+## Lecturer
+
+GEOG 2012 - Intro to Physical Geography Lab, Spring 2026 <br>
+GEOG 2350 - Water and Power, Spring 2026 <br>
+GEOG 3020 - Human Ecology, Spring 2026 <br>
+
+# UC Santa Barbara
+
+## Teaching Associate
+
+GEOG W8 - Intro to Global Warming, Summer 2025
+
+## Teaching Assistant
+
+GEOG 176A - Intro to GIS, Fall 2021
