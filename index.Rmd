@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the **Applied Wetland Spatial Dynamics Lab**!"
+title: "Welcome to the Applied Wetland Spatial Dynamics Lab!"
 site: distill::distill_website
 image: "AWSD_Lab_Transparent.png"
 links:
@@ -21,7 +21,7 @@ Definition: a branch of physical geography concerned with the study of wetlands 
 
 ## About: Who Are We?
 
-The Applied Wetland Spatial Dynamics (AWSD) Lab is a research group that combines a mix of field, laboratory, remote sensing, and modeling approaches to understand geographic and spatial processes in wetlands (typically from the prospective of plants and soil) for both foundational and applied science endeavors. Truly we capture the full breadth of our branch of geography, telmatology. Much of our previous work has been done in collaboration or consultation with wetland managers to understand a variety of challenges wetlands face. Previous projects have investigated wetland plant salinity response, post-disturbance landcover change, factors for plant establishment success, and innovative uses of field and airborne spectroscopy for wetland ecosystem and geographic science. 
+The Applied Wetland Spatial Dynamics (AWSD) Lab is a research group that combines a mix of field, laboratory, remote sensing, and modeling approaches to understand geographic and spatial processes in wetlands (typically from the prospective of plants and soil) for both foundational and applied science endeavors. Much of our previous work has been done in collaboration or consultation with wetland managers to understand a variety of challenges wetlands face. Previous projects have investigated wetland plant salinity response, post-disturbance landcover change, factors for plant establishment success, and innovative uses of field and airborne spectroscopy for wetland ecosystem and geographic science. Truly we capture the full breadth of our branch of geography, telmatology.
 
 Currently, we are located at California State University, Stanislaus as we start to establish ourselves and look for a more permanent home. 
 
