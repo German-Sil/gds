@@ -6,13 +6,13 @@ description: |
 
 # First-Authored Publications
 
-<pre> Silva, G.D. “Leveraging ChatGPT as a tool for teaching AI and climate media literacy”	  <b>In Press</b>         
+<pre> <b>Silva, G.D.</b> “Leveraging ChatGPT as a tool for teaching AI and climate media literacy”	  <b>In Press</b>         
 	  <i>California Geography</i> </pre>
-<pre> Silva, G.D., Roberts, D.A., Byrd, K.B., Chadwick, K.D., Walker, I.J., and King, J.Y.    <b>Aug. 2025</b>               
+<pre> <b>Silva, G.D.</b>, Roberts, D.A., Byrd, K.B., Chadwick, K.D., Walker, I.J., and King, J.Y.    <b>Aug. 2025</b>               
 	  “Using imaging spectroscopy and elevation in machine learning to estimate soil 
   	salinity in intermittently tidal wetlands.” <i>Ecosphere</i> 16 (8): e70356. 
   	https://doi.org/10.1002/ecs2.70356 </pre>
-<pre> Silva, G., Roberts, D., McFadden, J., and King, J., “Shifts in Salt Marsh Vegetation    <b>June 2022</b>     
+<pre> <b>Silva, G.D.</b>, Roberts, D., McFadden, J., and King, J., “Shifts in Salt Marsh Vegetation    <b>June 2022</b>     
 	Landcover Following Debris Flow Deposition.” <i>Remote Sensing</i> 14(12):2819. 
 	https://doi.org/10.3390/rs14122819 </pre>
 
