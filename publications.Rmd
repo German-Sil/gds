@@ -6,8 +6,8 @@ description: |
 
 # First-Authored Publications
 
-<pre> <b>Silva, G.D.</b> “Leveraging ChatGPT as a tool for teaching AI and climate media literacy”	  <b>In Press</b>         
-	  <i>California Geography</i> </pre>
+<pre> <b>Silva, G.D.</b> “Leveraging ChatGPT as a tool for teaching AI and climate media literacy”	  <b>2025</b>         
+	  <i>California Geography 64: 57</i> </pre>
 <pre> <b>Silva, G.D.</b>, Roberts, D.A., Byrd, K.B., Chadwick, K.D., Walker, I.J., and King, J.Y.    <b>Aug. 2025</b>               
 	  “Using imaging spectroscopy and elevation in machine learning to estimate soil 
   	salinity in intermittently tidal wetlands.” <i>Ecosphere</i> 16 (8): e70356. 

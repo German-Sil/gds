@@ -1,5 +1,5 @@
 name: "Telmatology"
-title: "Applied Wetland Spatial Dynamics Lab"
+title: "Applied Wetland Spatial Dynamics"
 description: |
 theme: postcard.css
 output_dir: "docs"
@@ -7,7 +7,7 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "People"
+    - text: "About"
       href: people.html
     - text: "Research"
       menu:

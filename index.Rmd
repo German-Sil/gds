@@ -1,13 +1,13 @@
 ---
-title: "Welcome to the Applied Wetland Spatial Dynamics Lab!"
+title: "Germán D. Silva, Ph.D."
 site: distill::distill_website
-image: "AWSD_Lab_Transparent.png"
+image: "profile_pic.jpg"
 links:
-  - label: PI's LinkedIn
+  - label: LinkedIn
     url: "https://linkedin.com/in/german-silva"
-  - label: PI's GitHub
+  - label: GitHub
     url: "https://github.com/German-Sil"
-  - label: PI's E-mail
+  - label: E-mail
     url: "mailto:german.silva@geog.ucsb.edu"
 output:
   postcards::solana
@@ -19,11 +19,20 @@ output:
 
 Definition: a branch of physical geography concerned with the study of wetlands (such as marshes or swamps)
 
-## About: Who Are We?
+## About: Who am I?
 
-The Applied Wetland Spatial Dynamics (AWSD) Lab is a research group that combines a mix of field, laboratory, remote sensing, and modeling approaches to understand geographic and spatial processes in wetlands (typically from the prospective of plants and soil) for both foundational and applied science endeavors. Much of our previous work has been done in collaboration or consultation with wetland managers to understand a variety of challenges wetlands face. Previous projects have investigated wetland plant salinity response, post-disturbance landcover change, factors for plant establishment success, and innovative uses of field and airborne spectroscopy for wetland ecosystem and geographic science. Truly we capture the full breadth of our branch of geography, telmatology.
 
-Currently, we are located at California State University, Stanislaus as we start to establish ourselves and look for a more permanent home. 
+
+<div style= "width: 100%;">
+<div style="float: right; width: 30%; margin-right: 20px">
+  <img src="AWSD_Transparent.png" style="width: 150%; margin-top: 10px;">
+</div>
+
+<div style="float:none;">I am a researcher / teacher that combines a mix of field, laboratory, remote sensing, and modeling approaches to understand geographic and spatial processes in wetlands (typically from the prospective of plants and soil) for both foundational and applied science endeavors. Much of my previous work has been done in collaboration or consultation with wetland managers to understand a variety of challenges wetlands face. Previous projects have investigated wetland plant salinity response, post-disturbance landcover change, factors for plant establishment success, and innovative uses of field and airborne spectroscopy for wetland ecosystem and geographic science. Truly my work captures the full breadth of my branch of geography, telmatology.
+</div>
+</div>
+
+Currently, I am located at California State University, Stanislaus as I establish myself and look for a more permanent home. 
 
 
 
